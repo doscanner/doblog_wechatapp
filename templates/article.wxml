@@ -1,0 +1,17 @@
+<template name="articleTemplate">
+  <navigator url="/pages/article/article?pid={{pid}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+      <image class="weui-media-box__thumb" src="{{figurepath}}" />
+    </view>
+    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+      <view class="weui-media-box__title">{{title}}</view>
+      <view class="weui-media-box__desc">{{tags}}</view>
+      <view class="weui-media-box__info">
+        <view class="weui-media-box__info__meta">{{createtime}}</view>
+        <view class="weui-media-box__info__meta">
+          <image class='icon-read' src='../../static/images/icon-read.png' />{{browsenum}}
+        </view>
+      </view>
+    </view>
+  </navigator>
+</template>
